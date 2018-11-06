@@ -94,7 +94,9 @@ h6 {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead.png");
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.png");
   background-repeat: no-repeat;
-  background-size: relative;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
 }
 
 .masthead h1 {
@@ -103,9 +105,9 @@ h6 {
   padding: 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1080px) {
   .masthead {
-    height: 100vh;
+    height: 100%;
   }
   .masthead h1 {
     font-size: 5.5rem;
